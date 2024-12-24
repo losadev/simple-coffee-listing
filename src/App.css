@@ -1,42 +1,44 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.bg-body {
+  background-image: url('./assets/bg-cafe.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #111315;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.container-list-coffee {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 80vw;
+  padding-top: 3em;
+  padding-bottom: 6em;
+  padding-inline: 12em;
+  color: #FEF7EE;
+  gap: 2.0em;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.container-xl {
+  margin-top: 15em;
+  background-color: #1B1D1F;
+  border-radius: 14px;
+  margin-bottom: 12em;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.container-btn {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1.5em;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.popular-tag {
+  position: absolute;
+  z-index: 1;
+  background-color: #F6C768;
+  color: #1B1D1F;
+  font-size: .7rem;
+  border-radius: 10px;
+  padding: 3px 12px;
+  left: 10px;
+  top: 10px;
 }

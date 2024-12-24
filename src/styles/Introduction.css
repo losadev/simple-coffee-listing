@@ -1,0 +1,19 @@
+.container-introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7em;
+}
+
+p {
+  color: #6F757C;
+  text-align: center;
+  width: 32em;
+}
+
+h1 {
+    text-align: center;
+    color: #FEF7EE;
+    margin-bottom: .5em;
+    font-size: 2.2rem;
+}
