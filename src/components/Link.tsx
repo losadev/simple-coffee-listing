@@ -1,11 +1,7 @@
 import '../styles/Link.css'
+import { LinkProps } from '../types/coffee.type';
 
-interface Props {
-  name: string
-  handleClick: ()=> void
-}
-
-const Link = ({name, handleClick}:Props) => {
+const Link = ({name, handleClick}:LinkProps) => {
   return (
     <a onClick={handleClick}>{name}</a>
   )

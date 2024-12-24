@@ -1,17 +1,7 @@
-import { ReactNode } from "react";
 import '../styles/Card.css'
+import { CardProps } from '../types/coffee.type';
 
-interface Props {
-  name: string
-  image:     string;
-  price:     string;
-  rating:    number | null | string;
-  votes:     number;
-  popular?:   ReactNode;
-  available: boolean
-}
-
-const Card = ({name,image, price,rating,votes,popular,available}:Props) => {
+const Card = ({name,image, price,rating,votes,popular,available}:CardProps) => {
   rating = Number(rating).toFixed(1);
 
   return (
